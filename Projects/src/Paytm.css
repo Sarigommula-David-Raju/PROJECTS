@@ -1,0 +1,485 @@
+*{
+    box-sizing: border-box;
+
+}
+.paytm-main{
+    display: flex;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+    background-color: aliceblue;
+    scroll-behavior: smooth ;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.paytm-nav{
+    position: sticky;
+    top: 1px;
+    width: 100%;
+    transition: all 0.5s ease-out;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 4px 3px rgb(199, 222, 230);
+    background-color: white;
+}
+.paytm-nav-items div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+.nav-item{
+    position: relative;
+    
+}
+
+.nav-item span{
+    font-size: 12px;
+    font-weight: bold;
+}
+.nav-item .drop-down{
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: -20px;
+   height: fit-content;
+    width: 150%;
+    color: rgb(13, 67, 67);
+    border-radius: 5px;
+    display: none;
+    transition: 0.5s ease-in-out;
+    background-color: white;
+    box-shadow: 1px 2px 5px 3px grey;
+}
+
+.nav-item:hover .drop-down{
+    display: block;
+    cursor: pointer;
+}
+
+.nav-item .drop-down ul li:hover{
+    box-shadow: 1px 1px 3px 2px lightgrey;
+    background-color: maroon;
+    color: white;
+    
+}
+
+
+.paytm-nav-items .nav-item:hover{
+    background-color: rgb(13, 67, 67);
+    color: white;
+    font-weight: bold;
+}
+
+
+.paytm-nav-items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    
+}
+
+.paytm-nav-items div{
+    width: auto;
+    padding: 0 10px;
+}
+
+.signup{
+    background-color: rgb(9, 104, 141);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.ad1{
+    display: flex;
+    justify-content: center;
+}
+.ad1 img{
+    width: 70vw;
+}
+.features{
+    display: flex;
+    margin: 10px 20px;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.bills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 3px 2px rgb(172, 218, 236);
+}
+
+
+.bill-container{
+    display: flex; 
+    flex-wrap: wrap;
+    
+}
+
+
+.bill-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    width: 100px;
+    margin: 3px;
+    padding: 5px;
+
+}
+
+.bill-item:hover{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 3px rgb(207, 228, 249);
+}
+.ad2{
+   margin: 5px;
+    height: 100%;
+}
+
+.ad2:hover{
+    transform: scale(1.01);
+}
+
+.ad3{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad3 img{
+     height: 10vh;
+     margin: 5px;
+     transition: 0.2s ease-out;
+}
+.ad3 img:hover{
+    transform: scale(1.05);
+}
+
+.ad4{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 5px;
+    justify-content: space-around;
+
+}
+.ad4 div img{
+    height: 120px;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+.paytm-travel{
+    box-sizing: border-box;
+    display: flex;
+    margin: 5px 20px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    height: 100px;
+    align-items: center;
+    
+}
+.paytm-travel div{
+    display: flex;  
+    
+}
+
+.paytm-travel div div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+}
+.paytm-travel div div:hover{
+    box-shadow: 2px 2px 4px 3px rgb(216, 231, 245);
+}
+
+.paytm-travel div div img{
+    height: 50px;
+}
+
+
+.paytm-travel-logo img{
+    width: 100px !important;
+  
+}
+
+.ad5{
+    display: flex;
+    justify-content: space-between;
+    align-items: cneter;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 20px 5px;
+    text-wrap: wrap;
+}
+.ad5 div{
+    width: 500px;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.ad5 div img{
+    width: 100px;
+    margin: 5px;
+}
+.ad6 img{
+    width: 500px !important;
+}
+
+.ad7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    border-radius: 50px;
+    margin: 5px 10px;
+    padding: 5px;
+    align-self: center;
+    background: linear-gradient(rgb(73, 127, 229), rgb(86, 191, 233));
+    
+}
+.ad7 div{
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+.ad7 div img{
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.ad8{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+
+.ad8-1{
+    padding: 5px 20px;
+    margin: 5px;
+    border: 2px solid rgb(205, 216, 230);
+    border-radius: 20px ;
+
+}
+
+.ad8-1 .credit img{
+    width: 200px;
+    margin: 5px;
+}
+.ad8-1 .credit span{
+    font-size: 15px;
+}
+
+.ad8-1 :nth-child(3){
+    color: rgb(25, 168, 225);
+}
+.ad8-1 p{
+    font-size:13px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+
+.apply{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 40px;
+}
+.apply img{
+    margin: 0 10px;
+    height: 40px;
+}
+.ad8-1 .apply div{
+    display: flex;
+    height: 40px;
+    width: 150px;
+    border-radius: 25px;
+    justify-content: space-around;
+    padding: 5px;
+    color: white;
+    background-color: rgb(7, 39, 121);
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.bank-cards-img img{
+    width: 500px !important;
+    margin: 15px !important;
+}
+
+.ad8-2{
+    display: flex;
+    padding: 5px 20px;
+    margin: 5px;
+    border: 2px solid rgb(205, 216, 230);
+    border-radius: 20px;
+    
+
+}
+.ad8-2 div img{
+    width: 150px;
+    margin: 10px 0;
+}
+
+.ad8-2 p{
+    font-size: 13px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.get-it-now{
+    
+    width: 130px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    background-color: rgb(7, 30, 123);
+    color: white;
+    margin: 5px 0;
+    font-size: 14px;
+
+}
+
+.ad8-21 img{
+    width: 500px !important;
+    margin: 15px !important;
+}
+
+.ad9{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+}
+
+.ad9 .content img{
+    width: 130px;
+}
+
+.ad9 h3 span{
+ color: rgb(52, 179, 229);
+}
+.ad9 pre{
+    text-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    margin: 10px 0;
+    font-weight: 500;
+    max-width: 500px;
+  
+}
+
+.ad9 div div{
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    height: 35px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(7, 30, 123);
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.ad9 p{
+    font-size: 9px;
+    max-width: 500px;
+}
+
+.ad9 p a{
+    color: rgb(7, 159, 219);
+}
+
+.ad9 .image img{
+    width: 550px;
+}
+
+.ad10{
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ad10 div img{
+    width: 80px;
+    margin: 10px 0;
+}
+
+.ad10 div h3 span{
+    color: rgb(10, 166, 227);
+    
+}
+.ad10 div h3{
+    margin: 5px 0;
+}
+
+.ad10 p{
+    width: 500px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.ad10 .content div{
+    font-size: 12px;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(18, 53, 92);
+
+}
+.ad10 >img{
+    width: 500px;
+}
